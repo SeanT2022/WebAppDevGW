@@ -1,0 +1,466 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Mulish' , sans-serif;	
+}
+#container
+{
+    height: 100vh;
+    width: 100%;
+    background: #eaf5ff;
+    position: relative;
+}
+
+#bg
+{
+	background: #eaf5ff;
+}
+
+/*
+ ========================================
+ Navigation
+ ========================================
+*/
+#navbar
+{
+    height: 15%;
+    width: 90%;
+    clip-path: polygon(100% 0, 95% 50%, 50% 100%, 5% 50%, 0 0);
+    position: absolute;
+    top: 0;
+    left: 5%;
+    background: #0fa3b1; /*#d40219;*/
+    padding: 0 10%;
+    display: flex;
+    flex-direction: row;
+}
+#navbar ul,ol
+{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 25px 0px;
+}
+ul
+{
+    position: absolute;
+    left: 5%;
+}
+ol
+{
+    position: absolute;
+    right: 5%;  /*Originally 5*/
+}
+li
+{
+    margin: 0px 15px; /*Originally 60*/
+    font-size: 20px; /*Originally 23*/
+}
+li a
+{
+    text-decoration: none;
+    color: #fff;			/*This changes the color of the text of the nav bar*/
+    transition: 0.5s;
+}
+li a:hover
+{
+    color: orange;		  /*This changes the color of the text when it is highlighted*/ 
+}
+	
+}
+/*
+ ========================================
+ Logo
+ ========================================
+*/
+#logo
+{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: 0px;
+    left: calc(50% - 60px);
+}
+#logo img
+{
+    height: 70px; /*120*/
+}
+/*
+===================================
+--------------Text--------------
+===================================
+*/
+#headerSection
+{
+    height: 400px;
+	width: 750px;
+	position: absolute;
+    right: 8%;
+	top: 5;
+}
+#headerSection h1
+{
+    font-family: sans-serif;
+    font-size: 70px;
+    color: #fff;
+    font-weight: 900;
+}
+#contentSection
+{
+    height: 400px;
+    width: 750px;
+    position: absolute;
+    left: 5%;
+    top: calc(50% - 200px);
+}
+#contentSection h2
+{
+    font-family: sans-serif;
+    font-size: 150px;
+    color: #d40219;
+    font-weight: 900;
+}
+#contentSection p
+{
+    padding: 0 0 0 20px;
+}
+
+#Car
+{
+    height: 500;
+    width: 500px;
+    position: absolute;
+    top: 35%; /*25%*/
+    right: 57%;
+    z-index: 999;
+    display: grid;
+    place-items: center;
+}
+#Car img
+{
+    height: 500;
+}
+
+#Details
+{
+    height: 500;
+    width: 500px;
+    position: absolute;
+    top: 85%; /*75%*/
+    right: 57%;
+    z-index: 999;
+    display: grid;
+    place-items: center;
+}
+#Details img
+{
+    height: 500;
+	width: 720px;
+}
+
+/*
+===================================
+--------------Buttons--------------
+===================================
+*/
+#contentSection button
+{
+    height: 70px;
+    width: 200px;
+    border: none;
+    outline: none;
+    background: #d40219;
+    color: #eaf5ff;
+    cursor: pointer;
+    font-weight: 900;
+    margin: 20px 0;
+    z-index: 100;
+    position: absolute;
+}
+#contentSection button:hover /*Add Details on button hover*/
+{
+    background: #ae8aed; /*Button Color*/
+	color: #fff		/*Text Color*/
+}
+#contentSection img
+{
+    height: 800px;
+    position: absolute;
+    top: -200px;
+    left: -100px;
+    filter: drop-shadow(1px 1px 0px #d40219)
+            drop-shadow(-1px -1px 0px #d40219);
+    opacity: 0.08;
+    z-index: 1;
+}
+#pagination,#socialLinks
+{
+    height: 60px;
+    width: 600px;
+    position: absolute;
+    bottom: 4%;
+    right: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+#socialLinks
+{
+    left: 5%;
+}
+
+#pagination #line,#socialLinks #line
+{
+    height: 3px;
+    width: 200px;
+    background: #000;
+    border-radius: 30px;
+}
+#pagination h2,#socialLinks i
+{
+    margin: 0px 30px;
+    font-size: 50px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+#pagination h2:hover
+{
+    color: #d40219;
+}
+#socialLinks i
+{
+    color: #d40219;
+    font-size: 36px;
+}
+#socialLinks i:hover
+{
+    color: #000;
+}
+#socialLinks #line
+{
+    background: #d40219;
+}
+
+/*
+===================================
+--------------Left Text------------
+===================================
+*/
+a, a:hover{
+	text-decoration: none;
+	color: orange; /*Text Colour*/
+}
+.hero {
+	width: 100%;
+}
+
+.hero .row{
+	width: 90%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 50px;
+	margin: auto;
+}
+
+/*---------Text----------*/
+.hero .row .text-sec{
+	margin-top: 100px;
+	margin-left: 0%; /*Moves Main Text Left or right*/
+}
+
+.hero .row .text-sec h1{
+	font-size: 85px;
+	color: orange;
+	text-transform: capitalize;
+}
+
+.hero .row .text-sec h1 span{
+	color: #0fa3b1;
+}
+
+.hero .row .left-sec p{
+	margin: 20px 0;
+	color: #0fa3b1;
+	line-height: 28px;
+	padding-right: 150px;
+}
+
+.hero .row .left-sec .discover-btn{
+	display: flex;
+	align-items: center;
+	outline: none;
+	border-radius: 50px;
+	cursor: pointer;
+	margin-top: 50px;
+	padding: 0 25px;
+	border: 3px solid #eddea4;
+	background-color: #0fa3b1;
+}
+
+.hero .row .left-sec .discover-btn:hover{
+	background-color: orange;
+	transition: 0.5s;
+}
+
+.hero .row .left-sec .discover-btn a{
+	color: #fff;
+	font-size: 25px;
+	letter-spacing: 2px;
+	text-transform: capitalize;
+}
+
+.hero .row .left-sec .discover-btn span{
+	color: #fff;
+	font-size: 45px;
+}
+
+/*Previous Button*/
+.back .back2 .back3{
+	margin-top: -15px;
+	margin-left: 11%; /*Moves Main Text Left or right*/
+}
+
+.back .back2 .back3 h3{
+	font-size: 25px;
+	color: orange;
+	text-transform: capitalize;
+}
+
+.back .back2 .back3 h3 span{
+	color: #0fa3b1;
+}
+
+/**/
+.bg{
+	background: #eaf5ff;
+}
+
+.bg2{
+	background: #0fa3b1;
+}
+
+.bg2 h3{
+	font-size: 25px;
+	color: WHITE;
+	text-transform: capitalize;
+}
+
+/**/
+.inner {
+  max-width: 1200px;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 20px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  gap: 50px;
+}
+
+.col {
+  flex: 1;
+  box-sizing: border-box;
+  padding: 20px;
+  background: #F7F7F7; /*BAckground of Box #F7F7F7*/
+  max-width: 400px;
+}
+
+.review {
+  text-align: center;
+}
+
+.title {
+  font-size: 28px;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+
+.stars {
+  color: #F1C40F;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+
+.btn {
+  display: inline-block;
+  background: #F1C40F;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-top: 10px;
+
+}
+
+
+.last {
+  margin-top: 40px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+input[type="text"],
+select,
+textarea {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button[type="submit"] {
+  display: block;
+  margin: 20px auto 0;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #0fa3b1;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: orange;
+  transition: 0.5s;
+}
+
+/**/
+/*Car Boxes 1*/
+.hero .row .box1-sec{
+	margin-left:-1000px;
+	margin-top: -70px;
+}
+
+/*Car Boxes 2*/
+.hero .row .box2-sec{
+	margin-top: -270px;
+	margin-left: 900px;
+}
+
+/*Car Boxes 3*/
+.hero .row .box3-sec{
+	margin-top: -240px;
+	margin-left: 1800px;
+}
+
+/**/
